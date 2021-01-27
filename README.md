@@ -4,4 +4,4 @@
 
 Discord bot written in discord.js by Thortois
 
-work in progress
+**still work in progress**

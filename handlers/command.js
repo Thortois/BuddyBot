@@ -1,8 +1,8 @@
 const fs = require('fs');
-
+const Discord = require('discord.js');
 const { prefix } = require('../config.json');
 
-module.exports = (client, Discord) => {
+module.exports = (client) => {
     var commandFiles = fs.readdirSync('./commands').filter(file => file.endsWith('.js'));
 
     for (var file of commandFiles) {

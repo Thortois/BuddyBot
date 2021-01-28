@@ -1,4 +1,5 @@
 const Discord = require('discord.js');
+const { logsChannel } = require('../config.json');
 
 module.exports = {
     name: 'kick',
@@ -18,7 +19,7 @@ module.exports = {
                 .setColor(`#15ff00`)
                 .setTimestamp()
                 .setDescription(`Kick successfull!`)
-            const channel = message.guild.channels.cache.get('794994969017319494');    
+            const channel = message.guild.channels.cache.get(logsChannel);    
             channel.send(kicked);
         });
     },
